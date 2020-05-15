@@ -118,16 +118,37 @@ header .container a {
 
 .container {
   max-width: 960px;
-  padding: 0 20px;
+  padding: 0 30px;
   margin: 0 auto;
+}
+
+@media (min-width: 500px) {
+  .container {
+    padding: 0 20px;
+  }
 }
 
 .hero {
   background: url("/assets/hero.jpg") right bottom no-repeat;
+  background-color: rgba(255, 255, 255, 0.6);
+  background-blend-mode: lighten;
   background-size: cover;
-  padding: 120px 0;
+  padding: 50px 0;
   line-height: 1.3;
   margin-bottom: 20px;
+}
+
+@media (min-width: 500px) {
+  .hero {
+    padding: 120px 0;
+  }
+}
+
+@media (min-width: 800px) {
+  .hero {
+    background-color: initial;
+    background-blend-mode: initial;
+  }
 }
 
 .hero .intro {
@@ -135,13 +156,25 @@ header .container a {
 }
 
 .hero .intro h2 {
+  font-size: 1.8rem;
   font-weight: 700;
-  font-size: 3.6rem;
   margin-bottom: 20px;
+}
+
+@media (min-width: 500px) {
+  .hero .intro h2 {
+    font-size: 3.6rem;
+  }
 }
 
 .hero .intro p {
   font-size: 1.6rem;
+}
+
+@media (min-width: 500px) {
+  .hero .intro p {
+    font-size: 2.4rem;
+  }
 }
 
 .filters {
@@ -179,6 +212,7 @@ header .container a {
 }
 
 .products .container .product {
+  position: relative;
   margin-bottom: 20px;
 }
 
@@ -187,5 +221,49 @@ header .container a {
     width: 33.333%;
     margin: 0;
   }
+}
+
+@media (max-width: 700px) and (min-width: 500px) {
+  .products .container .product {
+    width: 50%;
+  }
+}
+
+.products .container .product .overlay {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100%;
+  padding: 10px 0 10px 10px;
+  background-color: rgba(254, 234, 52, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: .2s ease-in all;
+  transition: .2s ease-in all;
+}
+
+.products .container .product .overlay h4 {
+  font-size: 1.8rem;
+}
+
+.products .container .product .overlay h4, .products .container .product .overlay p {
+  font-weight: 700;
+}
+
+.products .container .product .overlay p {
+  font-size: 3.6rem;
+}
+
+.products .container .product:hover .overlay {
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
