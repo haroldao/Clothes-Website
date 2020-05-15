@@ -41,50 +41,54 @@
 
     <nav class="filters">
       <div class="container">
-        <a href="/bandanas.html" class="selected">Bandanas</a>
-        <a href="/accessories.html">Accessories</a>
-        <a href="/bags.html">Bags</a>
+        <a href="#" class="show-filters">Show Filters</a>
+        <ul class="filters-list">
+          <li><a href="/all.html" class="selected" data-filter=".product">All</a></li>
+          <li><a href="/bandanas.html" data-filter=".bandanas">Bandanas</a></li>
+          <li><a href="/accessories.html" data-filter=".accessories">Accessories</a></li>
+          <li><a href="/bags.html" data-filter=".bags">Bags</a></li>
+        </ul>
       </div>
     </nav>
 
     <section class="products">
       <div class="container">
-        <div class="product">
+        <div class="product bandanas">
           <div class="overlay">
             <h4>Pocket Square</h4>
             <p>$30</p>
           </div>
           <img src="/assets/image_1.jpg" alt="Image 1">
         </div>
-        <div class="product">
+        <div class="product bags accessories">
           <div class="overlay">
             <h4>Bandana</h4>
             <p>$30</p>
           </div>
           <img src="/assets/image_2.jpg" alt="Image 2">
       </div>
-        <div class="product">
+        <div class="product accessories">
           <div class="overlay">
             <h4>Neckerchief</h4>
             <p>$35</p>
           </div>
           <img src="/assets/image_3.jpg" alt="Image 3">
         </div>
-        <div class="product">
+        <div class="product bags">
           <div class="overlay">
             <h4>Pocket Square</h4>
             <p>$30</p>
           </div>
           <img src="/assets/image_4.jpg" alt="Image 4">
         </div>
-        <div class="product">
+        <div class="product bandanas">
           <div class="overlay">
             <h4>Pocket Square</h4>
             <p>$30</p>
           </div>
           <img src="/assets/image_5.jpg" alt="Image 5">
         </div>
-        <div class="product">
+        <div class="product accessories">
           <div class="overlay">
             <h4>Pocket Square</h4>
             <p>$30</p>
@@ -94,4 +98,6 @@
       </div>
     </section>
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="/js/main.js"></script>
 </html>

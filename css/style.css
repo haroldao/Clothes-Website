@@ -193,6 +193,44 @@ header .container a {
   padding-bottom: 2px;
 }
 
+.filters ul li {
+  margin-bottom: 15px;
+}
+
+@media (min-width: 500px) {
+  .filters ul li {
+    display: inline;
+    margin-bottom: 0;
+  }
+}
+
+.filters .show-filters {
+  color: #B7B7B7;
+  margin-bottom: 10px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+@media (min-width: 500px) {
+  .filters .show-filters {
+    display: none;
+  }
+}
+
+.filters .filters-list {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  margin-top: 30px;
+  display: none;
+}
+
+@media (min-width: 500px) {
+  .filters .filters-list {
+    margin: 0;
+    display: block;
+  }
+}
+
 .products {
   margin-bottom: 60px;
 }

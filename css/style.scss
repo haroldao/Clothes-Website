@@ -106,6 +106,34 @@ header{
             padding-bottom: 2px;
         }
     }
+    ul{
+
+        li{
+            @media (min-width: 500px){
+                display: inline;
+                margin-bottom: 0;
+            }
+            margin-bottom: 15px;
+        }
+    }
+    
+    .show-filters{
+        color: #B7B7B7;
+        margin-bottom: 10px;
+        transition: all .5s ease-in-out;
+        @media (min-width: 500px){
+            display: none;
+        }
+    }
+    .filters-list{
+        transition: all .5s ease-in-out;
+        margin-top: 30px;
+        @media (min-width: 500px){
+            margin: 0;
+            display: block;
+        }
+        display: none;
+    }
    
 }
 
