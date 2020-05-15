@@ -159,4 +159,33 @@ header .container a {
   border-bottom: solid 3px #FEEA34;
   padding-bottom: 2px;
 }
+
+.products {
+  margin-bottom: 60px;
+}
+
+@media (min-width: 500px) {
+  .products .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.products .container .product {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 500px) {
+  .products .container .product {
+    width: 33.333%;
+    margin: 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */
