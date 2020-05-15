@@ -80,6 +80,10 @@ body {
   color: #000;
 }
 
+a {
+  color: black;
+}
+
 header {
   background-color: black;
   border-top: solid 5px #FEEA34;
